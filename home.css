@@ -1256,7 +1256,7 @@ form button{
     margin-right: var(--dl-space-space-fourunits);
   }
 }
-@media(max-width: 507px) {
+@media(max-width: 600px) {
   .home-container01 {
     height: 449px;
   }
