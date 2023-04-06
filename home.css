@@ -1,3 +1,7 @@
+html,body{
+  overflow-x: hidden;
+  
+}
 .home-container {
   width: 100%;
   display: flex;
@@ -39,12 +43,13 @@
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #101010;
+  background-color: #ffffff;
 }
 .nav-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 60%;
 }
 
 .nav-item {
@@ -1138,7 +1143,10 @@ form button{
 }
 @media(max-width: 767px) {
 
-
+  html,body{
+    overflow-x: hidden;
+    position: relative;
+  }
   .nav-menu {
     position: fixed;
     z-index: 2;
@@ -1256,10 +1264,25 @@ form button{
     margin-right: var(--dl-space-space-fourunits);
   }
 }
-@media(max-width: 507px) {
+@media(max-width:507px) {
   .home-container01 {
     height: 449px;
   }
+  .nav-menu {
+    position: fixed;
+    z-index: 2;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 75%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow:
+        0 10px 27px rgba(0, 0, 0, 0.05);
+}
+  
   .home-text {
     top: 205px;
     left: 50px;
@@ -1285,14 +1308,14 @@ form button{
   }
   .home-container02 {
     top: 618px;
-    left: 61px;
-    width: 361px;
+    left: 10%;
+    width: 70%;
     height: 450px;
   }
   .home-container03 {
     top: 602px;
-    left: 51px;
-    width: 383px;
+    left: 8%;
+    width: 75%;
     height: 481px;
   }
   .home-logo {
@@ -1306,6 +1329,12 @@ form button{
     height: 548px;
     position: absolute;
   }
+  .home-text010{
+    font-size: 30px;
+  }
+  .home-text008{
+    font-size: 35px;
+  }
   .home-text006 {
     top: 29px;
     left: 27px;
@@ -1314,58 +1343,61 @@ form button{
   .home-text007 {
     top: 52px;
     left: 27px;
-    width: 408px;
-    height: 164px;
+    width: 375px;
+    height: 120px;
     font-size: 30px;
   }
   .home-text012 {
     top: 201px;
     left: 27px;
     right: -12px;
-    width: 412px;
+    width: 75%;
     height: 232px;
-    font-size: 15px;
+    font-size: 13px;
   }
   .home-text018 {
-    top: 504px;
+    top: 515px;
     left: 68px;
     font-size: 20px;
   }
   .home-text019 {
-    top: 502px;
+    top: 515px;
     left: 259px;
     color: var(--dl-color-gray-white);
     font-size: 20px;
     font-family: Arial;
   }
   .home-text020 {
-    top: 443px;
+    top: 85%;
     left: 64px;
     font-size: 20px;
   }
   .home-icon {
-    top: 504px;
+    top: 515px;
     left: 37px;
   }
   .home-text021 {
-    top: 441px;
+    top: 85%;
     left: 259px;
     font-size: 20px;
   }
   .home-icon02 {
-    top: 443px;
+    top: 85%;
     left: 34px;
   }
   .home-icon04 {
-    top: 502px;
+    top: 515px;
     left: 232px;
+  }
+  .home-text025{
+    font-size: 3;
   }
   .home-icon06 {
     top: 440px;
     left: 231px;
   }
   .home-icon08 {
-    top: 440px;
+    top: 85%;
     left: 231px;
   }
   .home-features {
@@ -1374,11 +1406,12 @@ form button{
   }
   .home-text022 {
     top: 1681px;
-    left: 101px;
+    left: 20%;
+    font-size: 25px;
   }
   .home-text025 {
-    top: 3684px;
-    left: 115px;
+    top: 3690px;
+    left: 18%;
   }
   .home-container05 {
     height: 100%;
@@ -1439,7 +1472,7 @@ form button{
     grid-template-columns: 1fr;
   }
   .home-container21 {
-    height: 666px;
+    height: 500px;
   }
   .home-footer {
     height: 592px;
@@ -1474,4 +1507,31 @@ form button{
     color: #ffffff;
     text-align: center;
   }
+  .home-company-container {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+
+  }
+  .home-text089{
+    font-size: 10px;
+  }
+  .home-product-container{
+    font-size: 10px;
+  }
+  .home-container24{
+    font-size:10px;
+  }
+  html,body{
+    overflow-x: hidden;
+    position: relative;
+  }
+  .nav-link{
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+
 }
